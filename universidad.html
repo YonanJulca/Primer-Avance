@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo de Maquetado</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./estilos/universidad.css" />
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <!-- Barra lateral -->
+ <!-- Barra lateral -->
+<div id="sidebar" class="sidebar">
+  <!-- Contenido de la barra lateral -->
+  <ul class="opciones mb-3" style="flex:1 1 auto;">
+    <!-- Logo de la universidad en la barra lateral -->
+    <li class="menu-logo">
+      <a href="/home" class="d-flex">
+        <div class="logo-container flex-1-1-auto">
+          <img src="./imagenes/unI.png" alt="" class="m-0 pl-1" style="height:40px;"> 
+          <h4 class="flex-1-1-auto">
+            <span class="d-block mb-1 w-100"><b>UNI EARPFIM</b></span>
+            <span class="d-block mdl-typography--caption">PRACTICANTE</span>
+          </h4>
+        </div>
+      </a>
+    </li>
+     
+    <!-- Menú de grupos y módulos -->
+    <ul class="menu-grupos">
+      <!-- Grupo General -->
+      <li class="g1">
+        <a href="javascript:void(0)" class="d-flex justify-content-between grupos" data-grupo="g1">
+          <div class="d-flex"><i class="material-icons mr-2">General</div>
+         
+        </a>
+        <!-- Submenú de módulos para el Grupo General -->
+        <ul class="menu-modulos modulos-active" style="display: block;" id="g1">
+          <li>
+            <a href="./asistencia.html" id="practicante_id" class="modulos" data-toggle="tooltip" data-title="" data-original-title="" title="">
+              <i class="material-iconsmr-2"></i>Practicante</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </ul>
+</div>
+
+  <!-- Contenido principal -->
+  <div id="content" class="content">
+    <header class="d-flex justify-content-between align-items-center">
+      <!-- Botón para alternar la barra lateral -->
+      <button class="btn btn-info menu-button" onclick="sidebarToggle()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <span class="ml-auto">Yonan Julca Camilo Felix</span>
+      <div class="dropdown">
+        <!-- Botón de menú desplegable -->
+        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <!-- Opciones del menú desplegable -->
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Mi Informacion</a></li>
+          <li><a class="dropdown-item" href="#">Reniciar Clave</a></li>
+          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section class="p-4 text-center">
+      <h1>BIENVENIDO AL EARPFIM</h1>
+      <h1>ZONA USUARIO</h1>
+      <img src="imagenes/tuerca.gif" alt="Imagen de una tuerca animada">
+    </section>
+  </div>
+
+  <!-- Script para alternar la barra lateral -->
+  <script>
+    function sidebarToggle() {
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+        content.style.marginLeft = "0";
+      } else {
+        sidebar.style.width = "250px";
+        content.style.marginLeft = "250px";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Estilos para el encabezado */
+header {
+  width: 100%; /* Ancho al 100% del contenedor padre */
+  height: 70px; /* Altura de 70 píxeles */
+  background-color: #0d57ac; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  margin-bottom: 50px; /* Margen inferior de 50 píxeles */
+}
+
+/* Estilos adicionales para la barra lateral */
+.sidebar {
+  width: 0; /* Ancho inicial cero para estar oculta */
+  height: 100%; /* Altura al 100% del contenedor padre */
+  position: fixed; /* Posición fija en la ventana */
+  top: 0; /* Alineado en la parte superior */
+  left: 0; /* Alineado a la izquierda */
+  background-color: #f8f9fa; /* Color de fondo */
+  overflow-x: hidden; /* Ocultar contenido horizontalmente */
+  transition: 0.3s; /* Transición suave de animación */
+  padding-top: 60px; /* Espacio superior para evitar solapamiento con el encabezado */
+}
+
+/* Estilos para el contenido principal */
+.content {
+  margin-left: 0; /* Margen izquierdo inicial cero */
+  transition: 0.3s; /* Transición suave de animación */
+}
+
+/* Estilos para botones de menú */
+.menu-button,
+.dropdown-toggle {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  color: #fff; /* Color del ícono/texto */
+  font-size: 24px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambio de cursor al pasar el mouse */
+}
