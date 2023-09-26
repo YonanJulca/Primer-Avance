@@ -20,11 +20,7 @@ header {
   padding-top: 60px; /* Espacio superior para evitar solapamiento con el encabezado */
 }
 
-/* Estilos para el contenido principal */
-.content {
-  margin-left: 0; /* Margen izquierdo inicial cero */
-  transition: 0.3s; /* Transición suave de animación */
-}
+
 
 /* Estilos para botones de menú */
 .menu-button,
@@ -35,3 +31,8 @@ header {
   font-size: 24px; /* Tamaño de fuente */
   cursor: pointer; /* Cambio de cursor al pasar el mouse */
 }
+
+
+
+
+

@@ -1,0 +1,17 @@
+[
+    {
+      "numero": 1,
+      "fecha": "Martes 29/08/2023",
+      "entrada": "12:55:07 PM",
+      "salida": "7:05:01 PM",
+      "estado": "Puntual"
+    },
+    {
+      "numero": 2,
+      "fecha": "Miércoles 30/08/2023",
+      "entrada": "1:00:00 PM",
+      "salida": "6:00:00 PM",
+      "estado": "Puntual"
+    }
+  ]
+  

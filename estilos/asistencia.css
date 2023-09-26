@@ -1,92 +1,91 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para la sección principal */
-  .p-4 {
-    padding: 4rem;
-  }
-  
-  /* Estilos para las tarjetas */
-  .card {
-    border: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1.5rem;
-  }
-  
-  .card-body {
-    padding: 1.5rem;
-  }
-  
-  /* Estilos para los títulos */
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Estilos para las etiquetas de instrucciones */
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Estilos para el botón de marcar asistencia */
-  .btn-m-a-d {
-    background-color: #007bff;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-m-a-d:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Estilos para la tabla */
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.5rem;
-    border: 1px solid #dee2e6;
-  }
-  
-  /* Estilos para la paginación */
-  .pagination {
-    margin: 0;
-    list-style: none;
-    display: inline-flex;
-    padding-left: 0;
-  }
-  
-  .page-item {
-    margin: 0.2rem;
-  }
-  
-  .page-link {
-    color: #007bff;
-    text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid #dee2e6;
-    transition: background-color 0.3s;
-  }
-  
-  .page-link:hover {
-    background-color: #f8f9fa;
-  }
-  
-  /* Estilos para los iconos de font-awesome */
-  .fa {
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-  }
-  
+  font-family: Arial, sans-serif; /* Fuente predeterminada y tipo de fuente sans-serif para el cuerpo del documento */
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo del documento */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo del documento */
+}
+
+/* Estilos para la sección principal */
+.p-4 {
+  padding: 4rem; /* Agrega relleno de 4 rem a los elementos con la clase .p-4 */
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border: none; /* Elimina los bordes de las tarjetas */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra ligera a las tarjetas */
+  margin-bottom: 1.5rem; /* Agrega un margen inferior de 1.5 rem a las tarjetas */
+}
+
+.card-body {
+  padding: 1.5rem; /* Agrega relleno de 1.5 rem al cuerpo de la tarjeta */
+}
+
+/* Estilos para los títulos */
+h3 {
+  font-size: 1.5rem; /* Establece el tamaño de fuente de los títulos h3 a 1.5 rem */
+  margin-bottom: 1rem; /* Agrega un margen inferior de 1 rem a los títulos h3 */
+}
+
+/* Estilos para las etiquetas de instrucciones */
+label {
+  display: block; /* Hace que las etiquetas sean elementos de bloque */
+  margin-bottom: 0.5rem; /* Agrega un margen inferior de 0.5 rem a las etiquetas */
+}
+
+/* Estilos para el botón de marcar asistencia */
+.btn-m-a-d {
+  background-color: #007bff; /* Establece el color de fondo del botón */
+  color: white; /* Establece el color del texto en blanco */
+  padding: 0.5rem 1rem; /* Agrega relleno al botón */
+  border: none; /* Elimina los bordes del botón */
+  cursor: pointer; /* Cambia el cursor al puntero cuando se pasa sobre el botón */
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+.btn-m-a-d:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Estilos para la tabla */
+.table {
+  width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de la tabla para evitar espacios entre celdas */
+  margin-top: 1.5rem; /* Agrega un margen superior de 1.5 rem a la tabla */
+}
+
+.table th,
+.table td {
+  padding: 0.5rem; /* Agrega relleno a las celdas de la tabla */
+  border: 1px solid #dee2e6; /* Establece un borde de 1 píxel sólido para las celdas */
+}
+
+/* Estilos para la paginación */
+.pagination {
+  margin: 0; /* Elimina el margen predeterminado de la paginación */
+  list-style: none; /* Elimina la lista de viñetas */
+  display: inline-flex; /* Muestra los elementos de paginación en línea */
+  padding-left: 0; /* Elimina el relleno izquierdo predeterminado */
+}
+
+.page-item {
+  margin: 0.2rem; /* Agrega un pequeño margen a los elementos de página */
+}
+
+.page-link {
+  color: #007bff; /* Establece el color de enlace para los elementos de página */
+  text-decoration: none; /* Elimina la decoración de texto de los enlaces */
+  padding: 0.25rem 0.5rem; /* Agrega relleno a los enlaces de página */
+  border: 1px solid #dee2e6; /* Establece un borde de 1 píxel sólido para los enlaces de página */
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo de los enlaces */
+}
+
+.page-link:hover {
+  background-color: #f8f9fa; /* Cambia el color de fondo al pasar el mouse sobre los enlaces de página */
+}
+
+/* Estilos para los iconos de font-awesome */
+.fa {
+  font-size: 1.2rem; /* Establece el tamaño de fuente para los iconos de font-awesome */
+  margin-right: 0.5rem; /* Agrega un margen derecho a los iconos de font-awesome */
+}

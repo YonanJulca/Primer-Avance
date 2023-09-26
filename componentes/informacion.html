@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario de Datos Personales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-viXv0NlTCoEGT79HLfXkWJpHquqjw7+jt9oJ44PrI4G7lkqETQXsKhGFbxPOnDO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/informacion.css">
+</head>
+
+<body>
+    <h1>Datos Personales</h1>
+    <form id="datosPersonalesForm">
+        <!-- ... Campos del formulario ... -->
+        Sexo: <input type="radio" name="sexo" value="Masculino"> Masculino
+        <input type="radio" name="sexo" value="Femenino"> Femenino <br><br>
+        Fecha de Nacimiento: <input type="date" name="fechaNacimiento"><br><br>
+        DNI: <input type="text" name="dni"><br><br>
+        Teléfono Fijo: <input type="tel" name="telefonoFijo"><br><br>
+        Celular: <input type="tel" name="celular"><br><br>
+        RUC: <input type="text" name="ruc"><br><br>
+        Libreta Militar: <input type="text" name="libMilitar"><br><br>
+        Brevete: <input type="text" name="brevete"><br><br>
+        Categoría de Brevete: <input type="text" name="categoriaBrevete"><br><br>
+        ¿Cuenta con vehículo? <input type="checkbox" name="tieneVehiculo"><br><br>
+        Modelo: <input type="text" name="modelo"><br><br>
+        Placa: <input type="text" name="placa"><br><br>
+        Año: <input type="text" name="anio"><br><br>
+        Color: <input type="text" name="color"><br><br>
+        Estado Civil: <input type="text" name="estadoCivil"><br><br>
+        Fecha de Matrimonio: <input type="date" name="fechaMatrimonio"><br><br>
+        Grupo Sanguíneo: <input type="text" name="grupoSanguineo"><br><br>
+        Email: <input type="email" name="email"><br><br>
+    </form>
+
+    <h1>Lugar de Nacimiento</h1>
+    <form id="lugarNacimientoForm">
+        <!-- ... Campos del formulario ... -->
+        País: <input type="text" name="pais"><br><br>
+        Departamento: <input type="text" name="departamento"><br><br>
+        Provincia: <input type="text" name="provincia"><br><br>
+        Distrito: <input type="text" name="distrito"><br><br>
+    </form>
+
+    <h1>Domicilio</h1>
+
+    <button type="button" class="btn btn-success" onclick="añadirRegistro()">Añadir Registro</button>
+
+    <div id="registros"></div>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kI2upCkoCn2wEeXl2XtaqsLfs2wHKQVC+JiiJOkmCZtI8qTJY0k70X9I3Fu/66o8" crossorigin="anonymous"></script>
+    <script src="../javascript/informacion.js"></script>
+</body>
+
+</html>
